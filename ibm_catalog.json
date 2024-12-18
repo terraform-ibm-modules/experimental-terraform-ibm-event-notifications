@@ -303,11 +303,11 @@
             },
             {
               "name": "testing-deploy-arch-ibm-kms",
-              "id": "85fdbd7a-8c77-4abd-b716-653a31f3aba9",
+              "id": "85fdbd7a-8c77-4abd-b716-653a31f3aba9-global",
               "flavors": [
                 "standard"
               ],
-              "catalog_id": "f64499c8-eb50-4985-bf91-29f9e605a433",
+              "catalog_id": "7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3",
               "input_mapping": [
                 {
                   "dependency_output": "kms_instance_crn",
