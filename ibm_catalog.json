@@ -269,6 +269,9 @@
                 "standard"
               ],
               "id": "63641cec-6093-4b4f-b7b0-98d2f4185cd6-global",
+              "ignore_auto_referencing": [
+                "*"
+              ],
               "input_mapping": [
                 {
                   "dependency_output": "observability_resource_group_name",
@@ -281,33 +284,38 @@
               ],
               "optional": true,
               "on_by_default": true,
-              "version": ">=1.11.6"
+              "version": "^v1.18.0"
             },
             {
               "name": "testing-deploy-arch-ibm-observability",
               "flavors": [
                 "instances"
               ],
-              "id": "daf2cf91-2384-4205-b7f4-621299a4896d",
-              "catalog_id": "f64499c8-eb50-4985-bf91-29f9e605a433",
-              "input_mapping": [{
-                "dependency_output": "cloud_monitoring_crn",
-                "version_input": "existing_monitoring_crn"
-              }],
+              "id": "daf2cf91-2384-4205-b7f4-621299a4896d-global",
+              "catalog_id": "7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3",
+              "input_mapping": [
+                {
+                  "dependency_output": "cloud_monitoring_crn",
+                  "version_input": "existing_monitoring_crn"
+                }
+              ],
               "optional": true,
               "on_by_default": true,
-              "version": "^1.0.7",
+              "version": "^1.2.2",
               "ignore_auto_referencing": [
-                "ibmcloud_kms_api_key"
+                "*"
               ]
             },
             {
               "name": "testing-deploy-arch-ibm-kms",
-              "id": "85fdbd7a-8c77-4abd-b716-653a31f3aba9",
+              "id": "85fdbd7a-8c77-4abd-b716-653a31f3aba9-global",
               "flavors": [
                 "standard"
               ],
-              "catalog_id": "f64499c8-eb50-4985-bf91-29f9e605a433",
+              "catalog_id": "7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3",
+              "ignore_auto_referencing": [
+                "*"
+              ],
               "input_mapping": [
                 {
                   "dependency_output": "kms_instance_crn",
@@ -320,7 +328,7 @@
               ],
               "optional": true,
               "on_by_default": true,
-              "version": "^1.0.1"
+              "version": "^1.0.6"
             }
           ],
           "dependency_version_2": true

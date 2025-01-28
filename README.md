@@ -16,7 +16,7 @@ This module is used to create an IBM Cloud Event Notifications instance to filte
 
 <!-- BEGIN OVERVIEW HOOK -->
 ## Overview
-* [terraform-ibm-event-notifications](#terraform-ibm-event-notifications)
+* [experimental-terraform-ibm-event-notifications](#experimental-terraform-ibm-event-notifications)
 * [Submodules](./modules)
     * [fscloud](./modules/fscloud)
 * [Examples](./examples)
