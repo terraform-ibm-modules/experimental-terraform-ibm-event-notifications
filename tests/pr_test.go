@@ -124,11 +124,15 @@ func TestDAInSchematics(t *testing.T) {
 			"service_credentials": []map[string]string{
 				{
 					"secret_name": fmt.Sprintf("%s-cred-reader", options.Prefix),
-					"service_credentials_source_service_role": "Reader",
+					"service_credentials_source_service_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Reader",
 				},
 				{
 					"secret_name": fmt.Sprintf("%s-cred-writer", options.Prefix),
-					"service_credentials_source_service_role": "Writer",
+					"service_credentials_source_service_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+				},
+				{
+					"secret_name": fmt.Sprintf("%s-cred-editor", options.Prefix),
+					"service_credentials_source_service_role_crn": "crn:v1:bluemix:public:iam::::role:Editor",
 				},
 			},
 		},
@@ -210,7 +214,9 @@ func TestRunUpgradeDASolution(t *testing.T) {
 		"resource_group_name":                 options.Prefix,
 		"region":                              region,
 		"existing_kms_instance_crn":           permanentResources["hpcs_south_crn"],
-		"kms_endpoint_url":                    permanentResources["hpcs_south_private_endpoint"],
+		"kms_endpoint_url":                    permanentResources["hpcs_south_public_endpoint"],
+		"kms_endpoint_type":                   "public",
+		"provider_visibility":                 "public",
 		"management_endpoint_type_for_bucket": "public",
 	}
 
