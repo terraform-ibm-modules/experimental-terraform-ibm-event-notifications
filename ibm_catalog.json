@@ -271,13 +271,13 @@
               "key": "existing_en_instance_crn"
             },
             {
-              "key":"cbr_rules"
+              "key": "cbr_rules"
             },
             {
-              "key":"archive_filter_prefix"
+              "key": "archive_filter_prefix"
             },
             {
-              "key":"expire_filter_prefix"
+              "key": "expire_filter_prefix"
             },
             {
               "key": "retention_enabled",
@@ -411,6 +411,16 @@
                 {
                   "dependency_output": "kms_private_endpoint",
                   "version_input": "kms_endpoint_url"
+                },
+                {
+                  "dependency_input": "prefix",
+                  "version_input": "prefix",
+                  "reference_version": true
+                },
+                {
+                  "dependency_input": "region",
+                  "version_input": "region",
+                  "reference_version": true
                 }
               ],
               "optional": true,
