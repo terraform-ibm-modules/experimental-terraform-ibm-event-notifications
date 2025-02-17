@@ -179,7 +179,8 @@
               "key": "cos_key_name"
             },
             {
-              "key": "ibmcloud_kms_api_key"
+              "key": "ibmcloud_kms_api_key",
+              "default_value": "__NULL__"
             },
             {
               "key": "existing_cos_instance_crn"
@@ -371,7 +372,7 @@
               ],
               "optional": true,
               "on_by_default": true,
-              "version": "^v1.18.0"
+              "version": "^v1.18.2"
             },
             {
               "name": "testing-deploy-arch-ibm-observability",
