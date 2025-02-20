@@ -362,12 +362,9 @@
               ],
               "input_mapping": [
                 {
-                  "dependency_output": "observability_resource_group_name",
-                  "version_input": "resource_group_name"
-                },
-                {
-                  "version_input": "use_existing_resource_group",
-                  "value": true
+                  "dependency_input": "prefix",
+                  "version_input": "prefix",
+                  "reference_version": true
                 }
               ],
               "optional": true,
@@ -379,8 +376,8 @@
               "flavors": [
                 "instances"
               ],
-              "id": "daf2cf91-2384-4205-b7f4-621299a4896d-global",
-              "catalog_id": "7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3",
+              "id": "daf2cf91-2384-4205-b7f4-621299a4896d",
+              "catalog_id": "f64499c8-eb50-4985-bf91-29f9e605a433",
               "input_mapping": [
                 {
                   "dependency_output": "cloud_monitoring_crn",
@@ -389,7 +386,7 @@
               ],
               "optional": true,
               "on_by_default": true,
-              "version": "^1.2.2",
+              "version": "^1.2.3",
               "ignore_auto_referencing": [
                 "*"
               ]
