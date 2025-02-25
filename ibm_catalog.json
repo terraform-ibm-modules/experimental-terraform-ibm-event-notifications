@@ -57,7 +57,8 @@
           },
           "configuration": [
             {
-              "key": "ibmcloud_api_key"
+              "key": "ibmcloud_api_key",
+              "required": true
             },
             {
               "key": "prefix",
@@ -65,10 +66,12 @@
               "description": "Prefix to add to all resources created by this solution. To not use any prefix value, you can enter the string `__NULL__`."
             },
             {
-              "key": "use_existing_resource_group"
+              "key": "use_existing_resource_group",
+              "required": true
             },
             {
-              "key": "resource_group_name"
+              "key": "resource_group_name",
+              "required": true
             },
             {
               "key": "region",
