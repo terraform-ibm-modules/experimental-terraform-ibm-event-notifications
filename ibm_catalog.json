@@ -67,7 +67,8 @@
             },
             {
               "key": "use_existing_resource_group",
-              "required": true
+              "required": true,
+              "default_value": false
             },
             {
               "key": "resource_group_name",
