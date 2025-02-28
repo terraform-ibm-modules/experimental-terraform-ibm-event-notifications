@@ -367,12 +367,16 @@
               "input_mapping": [
                 {
                   "dependency_input": "observability_resource_group_name",
-                  "version_input": "resource_group_name",
-                  "reference_version": true
+                  "version_input": "resource_group_name"
                 },
                 {
                   "value": true,
                   "version_input": "use_existing_resource_group"
+                },
+                {
+                  "dependency_input": "prefix",
+                  "version_input": "prefix",
+                  "reference_version": true
                 }
               ],
               "optional": true,
