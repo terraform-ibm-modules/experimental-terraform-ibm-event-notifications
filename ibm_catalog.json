@@ -366,7 +366,7 @@
               ],
               "input_mapping": [
                 {
-                  "dependency_input": "observability_resource_group_name",
+                  "dependency_output": "observability_resource_group_name",
                   "version_input": "resource_group_name"
                 },
                 {
