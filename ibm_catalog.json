@@ -1,8 +1,8 @@
 {
   "products": [
     {
-      "name": "testing-deploy-arch-ibm-event-notifications",
-      "label": "[Add-ons Beta] Cloud automation for Event Notifications",
+      "name": "deploy-arch-ibm-event-notifications",
+      "label": "Event Notifications",
       "product_kind": "solution",
       "tags": [
         "ibm_created",
@@ -131,7 +131,7 @@
             },
             {
               "key": "kms_endpoint_url",
-              "required": false
+              "required": true
             },
             {
               "key": "existing_kms_instance_crn",
