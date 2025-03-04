@@ -1,8 +1,8 @@
 {
   "products": [
     {
-      "name": "deploy-arch-ibm-event-notifications",
-      "label": "Event Notifications",
+      "name": "testing-deploy-arch-ibm-event-notifications",
+      "label": "[Add-ons Beta] Cloud automation for Event Notifications",
       "product_kind": "solution",
       "tags": [
         "ibm_created",
