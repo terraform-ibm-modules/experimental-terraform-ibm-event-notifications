@@ -45,7 +45,6 @@ variable "existing_monitoring_crn" {
 variable "prefix" {
   type        = string
   description = "(Optional) Prefix to add to all resources created by this solution. To not use any prefix value, you can set this value to `null` or an empty string."
-  default     = "dev"
   validation {
     condition = (var.prefix == null ? true :
       alltrue([

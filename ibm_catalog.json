@@ -66,15 +66,6 @@
               "description": "Prefix to add to all resources created by this solution. To not use any prefix value, you can enter the string `__NULL__`."
             },
             {
-              "key": "use_existing_resource_group",
-              "required": true,
-              "default_value": false
-            },
-            {
-              "key": "resource_group_name",
-              "required": true
-            },
-            {
               "key": "region",
               "required": true,
               "options": [
@@ -99,6 +90,15 @@
                   "value": "us-south"
                 }
               ]
+            },
+            {
+              "key": "use_existing_resource_group",
+              "required": true,
+              "default_value": false
+            },
+            {
+              "key": "resource_group_name",
+              "required": true
             },
             {
               "key": "event_notification_name"
