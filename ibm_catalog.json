@@ -21,7 +21,7 @@
         "solution"
       ],
       "short_description": "Creates and configures an IBM Cloud Event Notifications instance.",
-      "long_description": "Looking for the released version? Go [here](https://cloud.ibm.com/catalog/7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3/architecture/deploy-arch-ibm-event-notifications-c7ac3ee6-4f48-4236-b974-b0cd8c624a46-global). Stay here if you want to try an experimental version with upcoming features. \n\n This architecture supports creating and configuring an IBM Cloud Event Notifications instance.",
+      "long_description": "Looking for the released version? Go [here](https://cloud.ibm.com/catalog/7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3/architecture/deploy-arch-ibm-event-notifications-c7ac3ee6-4f48-4236-b974-b0cd8c624a46-global). Stay here if you want to try an experimental version with the [Optional and swappable components](https://cloud.ibm.com/docs/secure-enterprise?topic=secure-enterprise-choose-plan-process#optional-swappable) capability. \n\n This architecture supports creating and configuring an IBM Cloud Event Notifications instance.",
       "offering_docs_url": "https://github.com/terraform-ibm-modules/terraform-ibm-event-notifications/blob/main/solutions/standard/README.md",
       "offering_icon_url": "https://raw.githubusercontent.com/terraform-ibm-modules/terraform-ibm-event-notifications/main/images/en_icon.svg",
       "provider_name": "IBM",
@@ -66,15 +66,6 @@
               "description": "Prefix to add to all resources created by this solution. To not use any prefix value, you can enter the string `__NULL__`."
             },
             {
-              "key": "use_existing_resource_group",
-              "required": true,
-              "default_value": false
-            },
-            {
-              "key": "resource_group_name",
-              "required": true
-            },
-            {
               "key": "region",
               "required": true,
               "options": [
@@ -99,6 +90,15 @@
                   "value": "us-south"
                 }
               ]
+            },
+            {
+              "key": "use_existing_resource_group",
+              "required": true,
+              "default_value": false
+            },
+            {
+              "key": "resource_group_name",
+              "required": true
             },
             {
               "key": "event_notification_name"
@@ -131,7 +131,7 @@
             },
             {
               "key": "kms_endpoint_url",
-              "required": false
+              "required": true
             },
             {
               "key": "existing_kms_instance_crn",
