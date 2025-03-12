@@ -371,9 +371,8 @@
                   "reference_version": true
                 },
                 {
-                  "dependency_input": "observability_resource_group_name",
-                  "version_input": "resource_group_name",
-                  "reference_version": true
+                  "dependency_output": "observability_resource_group_name",
+                  "version_input": "resource_group_name"
                 },
                 {
                   "value": true,
