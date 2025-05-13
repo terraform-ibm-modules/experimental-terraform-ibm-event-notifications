@@ -330,7 +330,6 @@
             }
           ],
           "architecture": {
-            "descriptions": "This architecture supports creating and configuring an IBM Cloud Event Notifications instance.",
             "features": [
               {
                 "title": "Creates an Event Notifications instance",
